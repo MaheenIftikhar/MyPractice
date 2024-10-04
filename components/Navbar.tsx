@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
-
+import { MdKeyboardArrowRight } from "react-icons/md";
 import {Divider} from "@nextui-org/react";
 import { RxHamburgerMenu } from "react-icons/rx";
+
 const Navbar = () => {
   return (
     <div>
@@ -13,7 +14,7 @@ const Navbar = () => {
       <Link href='/'>About Us</Link>
       <Link href='/'>News</Link>
       <Link href='/'>Send Inquiry </Link>
-      <Link href='/'>Contact</Link>
+      <Link href='/Contact'>Contact</Link>
      </div>
       </div>
       <div className='Image'><img src='//bsg-i.nbxc.com/upload/1341/828/6ba22195caf664902f7d1b2e2e9f7935.jpg@95Q.webp' alt='HomePage'></img></div>
@@ -49,7 +50,22 @@ const Navbar = () => {
       </div>
       <section className=' bg-[#eff5f5] bg-[-300px_center] bg-no-repeat'>
         <div className='overflow-hidden h-[500px] w-full box-border p-[0_1%] m-[0_auto]'>
-          <div className='left w-[380px] relative bg-auto bg-hero-pattern' ></div>
+          <div className='left w-[380px] relative bg-auto bg-hero-pattern  left-[2rem]' >
+            <div className='about_shade relative h-[500px] w-full left-0 top-0 '>
+              <div className='about_con w-[210px] h-[360px] box-border border-3 border-solid border-[#ffffff] border-l-0 top-[40px] right-[60px] absolute opacity-1 before:content-[" "] before:w-[3px] before:h-[56%] before:bg-[#ffffff] before:absolue before:bottom-0 before:left-0 after:content-[" "] after:w-[3px] after:h-[16%] after:bg-[#ffffff] after:absolute after:top-0 after:left-0 '>
+                <div className='title absolute left-[-20px] top-[18%]'>
+                  <p className='text-2xl text-[#ffffff]'>About Us</p>
+                  <p className='text-sm text-[#ffffff]'>Quality is our middle name</p>
+                </div>
+                <div className='more absolute left-[20px] bottom-[10px]'>
+                  <Link className='text-[#ffffff] flex flex-row justify-center items-center' href='/nanjing-jinshan-chemical-technology-co-ltd.html'>View More<MdKeyboardArrowRight className='ml-2 w-6 h-6'/></Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='right w-[65%] max-w-[900px] pl-[3%] box-border opacity-1 left-0'>
+     <p className='zt  before:left-0 before:bottom-0 text-xl text-black pb-[15px] before:content-[" "] before:w-[36px] before:h-[3px] before:bg-[#4380db] before:absolute'>Nanjing Jinshan Chemical Technology Co., Ltd</p>
+          </div>
         </div>
       </section>
       <section className='Product-Showcase w-full'></section>
